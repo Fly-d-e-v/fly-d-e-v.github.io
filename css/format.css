@@ -1,0 +1,91 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+    font-family: 'Open Sans', sans-serif;
+
+    background-color: rgb(58, 58, 58);
+    color: #ebebeb;
+}
+
+.header {
+    padding: 24px 0;
+
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+}
+
+.container.c1 {
+    background-color: rgb(27, 27, 27);
+}
+
+.container.g1 {
+    background-image: linear-gradient(to right bottom, #075745, #10735c, #1a9073, #25ae8b, #30cda4);
+    padding: 90px 0;
+    background-size: 400% 400%;
+    animation: gradientshift 50s ease infinite;
+}
+
+@keyframes gradientshift { 
+    0%      {background-position: 0% 50%}
+    50%     {background-position: 100% 50%}
+    100%    {background-position: 0% 50%}
+}
+
+.content {
+    width: 100%;
+    height: fit-content;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px 0;
+    overflow: auto;
+}
+
+.content .half {
+    width: 50%;
+    float: left;
+}
+
+.content .third {
+    width: 33.333%;
+    float: left;
+}
+
+.card {
+    width: 100%;
+    height: 300px;
+    background-image: url("../img/p01/card.png");
+    background-position: center;
+    background-size: cover;
+
+    border-radius: 2%;
+}
+
+button.connect {
+    padding: 5px 12px;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 4px;
+    background: none;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    float: left;
+    margin: 16px 8px 0 0;
+}
+
+button.connect i {
+    margin-right: 8px;
+}
+
+button.connect:hover {
+    background-color: white;
+    color: black;
+}
