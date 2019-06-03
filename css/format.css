@@ -11,7 +11,7 @@ body {
 }
 
 .header {
-    padding: 24px 0;
+    padding: 28px 0;
 
     width: 100%;
     max-width: 960px;
@@ -28,7 +28,7 @@ body {
 
 .container.g1 {
     background-image: linear-gradient(to right bottom, #075745, #10735c, #1a9073, #25ae8b, #30cda4);
-    padding: 90px 0;
+    padding: 70px 0;
     background-size: 400% 400%;
     animation: gradientshift 50s ease infinite;
 }
