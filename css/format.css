@@ -6,7 +6,7 @@ body {
 
     font-family: 'Open Sans', sans-serif;
 
-    background-color: rgb(58, 58, 58);
+    background-color: #1b1b1b;
     color: #ebebeb;
 }
 
@@ -28,10 +28,6 @@ body {
 
 .container {
     width: 100%;
-}
-
-.container.c1 {
-    background-color: rgb(27, 27, 27);
 }
 
 .container.g1 {
@@ -93,7 +89,7 @@ body {
     }
 
     .content .half.m {
-        margin: 10px 0 0 0;
+        margin: 20px 0 0 0;
     }
 }
 
@@ -127,4 +123,13 @@ a.connect i {
 a.connect:hover {
     background-color: white;
     color: black;
+}
+
+@media (max-width: 960px) {
+    a.connect {
+        width: 48%;
+        margin: 16px 1% 0 1%;
+        box-sizing: border-box;
+        text-align: center;
+    }
 }
