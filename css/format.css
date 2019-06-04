@@ -18,6 +18,14 @@ body {
     margin: 0 auto;
 }
 
+@media (max-width: 960px) {
+    .header {
+        padding: 20px 0;
+        max-width: none;
+        margin: none;
+    }
+}
+
 .container {
     width: 100%;
 }
@@ -33,6 +41,17 @@ body {
     animation: gradientshift 50s ease infinite;
 }
 
+@media (max-width: 960px) {
+    .container.g1 {
+        padding: 40px 20px;
+    }
+
+    .container {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+}
+
 @keyframes gradientshift { 
     0%      {background-position: 0% 50%}
     50%     {background-position: 100% 50%}
@@ -41,7 +60,6 @@ body {
 
 .content {
     width: 100%;
-    height: fit-content;
     max-width: 960px;
     margin: 0 auto;
     padding: 20px 0;
@@ -49,13 +67,34 @@ body {
 }
 
 .content .half {
-    width: 50%;
+    width: 49%;
     float: left;
+}
+
+.content .half.m {
+    margin-left: 2%;
 }
 
 .content .third {
     width: 33.333%;
     float: left;
+}
+
+@media (max-width: 960px) {
+    .content {
+        max-width: none;
+        margin: none;
+        overflow: hidden;
+    }
+
+    .content .half {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .content .half.m {
+        margin: 10px 0 0 0;
+    }
 }
 
 .card {
@@ -68,24 +107,24 @@ body {
     border-radius: 2%;
 }
 
-button.connect {
+a.connect {
     padding: 5px 12px;
     color: white;
     cursor: pointer;
     border: 1px solid white;
     border-radius: 4px;
-    background: none;
-    outline: none;
+    text-decoration: none;
     font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
     float: left;
     margin: 16px 8px 0 0;
 }
 
-button.connect i {
+a.connect i {
     margin-right: 8px;
 }
 
-button.connect:hover {
+a.connect:hover {
     background-color: white;
     color: black;
 }
