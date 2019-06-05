@@ -10,12 +10,19 @@ body {
     color: #ebebeb;
 }
 
-.header {
-    padding: 28px 0;
+.content.header i {
+    float: right;
+    font-size: 32px;
+    margin: 0 2px 0px 12px;
+}
 
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
+.content.header a {
+    text-decoration: none;
+    color: #ebebeb;
+}
+
+.content.header a:hover {
+    color: rgb(153, 153, 153);
 }
 
 @media (max-width: 960px) {
@@ -32,7 +39,7 @@ body {
 
 .container.g1 {
     background-image: linear-gradient(to right bottom, #075745, #10735c, #1a9073, #25ae8b, #30cda4);
-    padding: 70px 0;
+    padding: 60px 0;
 }
 
 @media (max-width: 960px) {
@@ -64,26 +71,33 @@ body {
 }
 
 .content .third {
-    width: 33.333%;
+    width: 36%;
     float: left;
 }
 
 .content .two.third {
-    width: 66.667%;
+    width: 64%;
     float: left;
 }
 
 .content .skills {
-    padding: 86px 0px 0 72px;
+    padding: 86px 0px 0 64px;
     box-sizing: border-box;
     overflow: hidden;
 }
 
 .skillbox {
     width: 100%;
+    overflow: auto;
     padding: 3px 2px 3px 18px;
     border-left: 1px solid white;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.046), rgba(255, 255, 255, 0));
+    box-sizing: border-box;
+}
+
+.skillbox .part {
+    width: 50%;
+    float: left;
 }
 
 @media (max-width: 960px) {
