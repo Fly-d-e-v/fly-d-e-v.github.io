@@ -158,6 +158,7 @@ body {
 .card .info h2 {
     font-size: 22px;
     line-height: 0px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.85);
 }
 
 .card:hover .info {
