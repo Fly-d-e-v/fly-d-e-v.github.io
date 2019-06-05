@@ -132,7 +132,7 @@ body {
     position: relative;
     width: 100%;
     height: 260px;
-    background-image: url("../img/p01/card.png");
+
     background-position: center;
     background-size: cover;
     cursor: pointer;
@@ -197,4 +197,21 @@ a.connect:hover {
         box-sizing: border-box;
         text-align: center;
     }
+}
+
+/* CARD DATA */
+.card.p01 {
+    background-image: url("../img/p01/card.png");
+}
+
+.card.p02 {
+    background-image: url("../img/p02/card.png");
+}
+
+.card.p03 {
+    background-image: url("../img/p03/card.png");
+}
+
+.card.p04 {
+    background-image: url("../img/p04/card.png");
 }
