@@ -33,8 +33,6 @@ body {
 .container.g1 {
     background-image: linear-gradient(to right bottom, #075745, #10735c, #1a9073, #25ae8b, #30cda4);
     padding: 70px 0;
-    background-size: 400% 400%;
-    animation: gradientshift 50s ease infinite;
 }
 
 @media (max-width: 960px) {
@@ -46,12 +44,6 @@ body {
         padding: 0 20px;
         box-sizing: border-box;
     }
-}
-
-@keyframes gradientshift { 
-    0%      {background-position: 0% 50%}
-    50%     {background-position: 100% 50%}
-    100%    {background-position: 0% 50%}
 }
 
 .content {
@@ -101,6 +93,10 @@ body {
     background-size: cover;
 
     border-radius: 2%;
+}
+
+.card.small {
+    height: 160px;
 }
 
 a.connect {
