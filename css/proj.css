@@ -62,7 +62,7 @@
 }
 
 .description {
-    padding-right: 16px;
+    padding-right: 22px;
     box-sizing: border-box;
 }
 
@@ -86,8 +86,8 @@
 }
 
 .screenshots .bar .radio {
-    width: 14px;
-    height: 14px;
+    width: 16px;
+    height: 16px;
 
     margin: 0 8px;
     display: inline-block;
@@ -96,7 +96,12 @@
 
     border-radius: 50%;
 
-    background-color: rgba(0, 0, 0, 0.385);
+    background-color: rgba(0, 0, 0, 0.485);
+}
+
+.screenshots .bar .radio:hover {
+    width: 17px;
+    height: 17px;
 }
 
 .screenshots img {
@@ -125,11 +130,11 @@
 }
 
 .screenshot input:checked ~ .radio {
-    background-color: rgba(0, 0, 0, 0.685);
+    background-color: rgba(0, 0, 0, 0.885);
 }
 
-.screenshot #img-1:checked ~ .bar #radio-1.radio,
-.screenshot #img-2:checked ~ .screenshots .bar #radio-2.radio,
-.screenshot #img-3:checked ~ .screenshots .bar #radio-3.radio {
-    background-color: rgba(0, 0, 0, 0.685);
+.screenshots #img-1:checked ~ .bar #radio-1.radio,
+.screenshots #img-2:checked ~ .bar #radio-2.radio,
+.screenshots #img-3:checked ~ .bar #radio-3.radio {
+    background-color: rgba(0, 0, 0, 0.885);
 }
