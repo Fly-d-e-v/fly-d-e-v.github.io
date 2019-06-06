@@ -16,6 +16,10 @@ body {
     margin: 0 2px 0px 12px;
 }
 
+.content.header h1 {
+    text-shadow: none;
+}
+
 .content.header a {
     text-decoration: none;
     color: #ebebeb;
@@ -59,6 +63,10 @@ body {
     margin: 0 auto;
     padding: 20px 0;
     overflow: auto;
+}
+
+.content h1 {
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.85);
 }
 
 .content .half {
@@ -165,6 +173,8 @@ body {
     position: absolute;
     width: 100%;
     bottom: 0px;
+    text-decoration: none;
+    color: #ebebeb;
     background-color: rgba(0, 0, 0, 0.35);
     padding: 8px 16px;
 }
