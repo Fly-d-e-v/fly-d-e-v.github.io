@@ -41,8 +41,18 @@ body {
     width: 100%;
 }
 
-.container.g1 {
+.container.gradient.color1 {
     background-image: linear-gradient(to right bottom, #075745, #10735c, #1a9073, #25ae8b, #30cda4);
+    padding: 60px 0;
+}
+
+.container.gradient.color2 {
+    background-image: linear-gradient(to right bottom, #c33764, #a62a6f, #822675, #572676, #1d2671);
+    padding: 60px 0;
+}
+
+.container.gradient.color3 {
+    background-image: linear-gradient(to right bottom, #8b2b10, #9b3512, #aa3f14, #ba4a16, #c95517);
     padding: 60px 0;
 }
 
