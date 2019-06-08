@@ -185,7 +185,7 @@ body {
     bottom: 0px;
     text-decoration: none;
     color: #ebebeb;
-    background-color: rgba(0, 0, 0, 0.35);
+    background-color: rgba(0, 0, 0, 0.45);
     padding: 8px 16px;
 }
 
@@ -210,7 +210,6 @@ a.connect {
     border: 1px solid white;
     border-radius: 4px;
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
     font-size: 13px;
     float: left;
     margin: 16px 8px 0 0;
@@ -249,4 +248,8 @@ a.connect:hover {
 
 .card.p04 {
     background-image: url("../img/p04/card.png");
+}
+
+.card.p05 {
+    background-image: url("../img/p05/card.png");
 }
