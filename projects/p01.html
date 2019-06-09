@@ -70,9 +70,8 @@
         <div class="content">
             <div class="third description">
                 <h1 class="t">Description</h1>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta, nibh ac commodo elementum, ipsum leo
-                pharetra est, vel mollis urna ligula in ipsum. Phasellus euismod commodo mauris id interdum. Ut
-                vulputate
+                Stellar Survivor is a first-person, co-op survival game. Players have to defend themselves against waves of hostile aliens, and prevent them reaching the powercore. Players can use multiple weapons, obstacles and traps to assist. Multiplayer done through Steam.
+                <br><br>I worked 4 working days a week, for a school year, on this project. In the early phases I worked on creating the multiplayer backend with GameSparks, and getting the first Unreal Multiplayer functionality in. After that I worked on using Unreal Replication and RPCs. In the later stages I was part of the QnA team, fixing crashes and improving stability using Profiling tools and Crash Dumps.
             </div>
             <div class="two third">
                 <div class="screenshots">
@@ -102,11 +101,29 @@
         <div class="content tasks">
             <div class="divider"></div>
             <h1>My tasks</h1>
-            <t>Networking</t>
+            <t>Networking and Gameplay</t>
             <div class="item">
-                stuff
+                <b>Combat and Enemies</b><br>
+                <p>Replication of bullets fired and damage taken. Setting up an authorative server setup, where important funcions like these are verified by server. Assisting the AI team having Enemies run on server and replicated to Clients.</p>
+                <b>Building</b><br>
+                <p>Modifying the building system to work on multiplayer sessions. Extensively working with other programmer to get the existing building system replicated. Creating a networked template to spawn walls and traps.</p>
+                <b>Game states</b><br>
+                <p>Creating replicated death states. Splitting functionality into singleplayer and multiplayer. In multiplayer players go into a spectating mode if another player is alive. If a player that is alive completes a wave, all dead players are respawned. Multiple iterations to increase stability with Technical Design work.</p>
+                <b>Wisp trail</b><br>
+                <p>Using Unreal Navigation and Splines I created a system to show a trail that displays the path of the upcoming enemies, to increase tactical options of players. System uses minimal replication to reduce Networking usage, and syncs up depending on enemy wave states.</p>
             </div>
-
+            <t>Sessions</t>
+            <div class="item">
+                <b>GameSparks</b><br>
+                <p>Using GameSparks to create JavaScript backend for Sessions and Matchmaking. SQL used to save friendslist and message data. GameSparks used for Cross Platform interaction for upcoming PC and PS4 builds. System later replaced for Steam due to PS4 being scrapped.</p>
+            </div>
+            <t>QnA</t>
+            <div class="item">
+                <b>Crash Fixing</b><br>
+                <p>Our game had technical debt due to us not being used to work on a project for a year. Near the last weeks of the project we were experiencing a large amount of crashes during playtests. This was extremely detrimental to the players experience. Using Unreal Profiling tools I went over multiple options, and excluded Memory Leaks. By implementing Sentry.io for crash report collecting, I gained an overview of our crashes, and found out that almost all were being caused by Acces Violation Errors. I changed all headers in the project and used UPROPERTIES to secure unsafe pointers, resulting in safer memory management and reducing crashes to almost none.</p>
+                <b>Network Profiling</b><br>
+                <p>In a combined effort with another programmer, I used the Unreal Network Profiler to analzye our Data usages, and packages sent. Using this method we applied Network Culling and reduced RPC calls, resulting a smoother experience for slower net speeds, and removing network redundancy.</p>
+            </div>
         </div>
     </div>
 </body>
