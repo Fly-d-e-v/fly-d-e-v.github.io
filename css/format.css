@@ -79,6 +79,11 @@ body {
     text-shadow: 1px 1px 3px rgba(0,0,0,0.85);
 }
 
+.content.about a {
+    text-decoration-color: rgba(255, 255, 255, 0.66);
+    color: #ebebeb;
+}
+
 .content .half {
     width: 49%;
     float: left;
@@ -86,6 +91,12 @@ body {
 
 .content .half.m {
     margin-left: 2%;
+}
+
+.content .half.center {
+    float: none;
+    display: block;
+    margin: 0 auto;
 }
 
 .content .third {
